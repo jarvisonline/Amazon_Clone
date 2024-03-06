@@ -10,21 +10,34 @@ function changeSlide() {
   }
   imgs[n].style.display = "block";
 }
-changeSlide();
 
-prev_btn.addEventListener("click", (e) => {
-  if (n > 0) {
-    n--;
-  } else {
-    n = imgs.length - 1;
-  }
-  changeSlide();
-});
-next_btn.addEventListener("click", (e) => {
+function nextSlide() {
   if (n < imgs.length - 1) {
     n++;
   } else {
     n = 0;
   }
   changeSlide();
+}
+
+function prevSlide() {
+  if (n > 0) {
+    n--;
+  } else {
+    n = imgs.length - 1;
+  }
+  changeSlide();
+}
+
+// Change slide every 10 seconds
+const interval = setInterval(nextSlide, 10000);
+
+prev_btn.addEventListener("click", (e) => {
+  prevSlide();
+  clearInterval(interval); // Stop automatic scrolling
+});
+
+next_btn.addEventListener("click", (e) => {
+  nextSlide();
+  clearInterval(interval); // Stop automatic scrolling
 });
