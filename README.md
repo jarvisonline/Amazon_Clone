@@ -1,42 +1,42 @@
+# Amazon Clone Homepage
 
-Amazon Clone Homepage
 🚀 Welcome to my Amazon Clone Homepage! This project is a simplified version of the Amazon homepage, created using HTML, CSS, JavaScript, and Font Awesome for icons. It is deployed using Render.
 
-Features
-📦 Product Display: The homepage showcases various products with their images, titles, and prices.
+## Features
 
-🔍 Search Bar: Users can search for products using the search bar.
+📦 **Product Display**: The homepage showcases various products with their images, titles, and prices.
 
-🔒 User Authentication: Authentication functionality ensures security by allowing users to sign in and sign up.
+🔍 **Search Bar**: Users can search for products using the search bar.
 
-🛒 Add to Cart: Users can add products to their cart for later purchase.
+🔒 **User Authentication**: Authentication functionality ensures security by allowing users to sign in and sign up.
 
-Technologies Used
-🖥 HTML: Used for structuring the webpage content.
+🛒 **Add to Cart**: Users can add products to their cart for later purchase.
 
-🎨 CSS: Employed for styling and layout of the webpage.
+## Technologies Used
 
-💻 JavaScript: Implemented for dynamic functionalities and interactions.
+🖥 **HTML**: Used for structuring the webpage content.
 
-🔍 Font Awesome: Utilized for icons to enhance the user interface.
+🎨 **CSS**: Employed for styling and layout of the webpage.
 
-Deployment
-This project is deployed using Render. You can access the live version here.
+💻 **JavaScript**: Implemented for dynamic functionalities and interactions.
 
-Usage
+🔍 **Font Awesome**: Utilized for icons to enhance the user interface.
+
+## Deployment
+
+This project is deployed using Render. You can access the live version [here](#).
+
+## Usage
+
 To run this project locally, follow these steps:
 
-Clone the repository:
-bash
-Copy code
-git clone <repository-url>
-Navigate to the project directory:
-bash
-Copy code
-cd amazon-clone-homepage
-Open the index.html file in your web browser.
-Contributing
+1. Clone the repository:git clone <repository-url>
+2. Open the `index.html` file in your web browser.
+
+## Contributing
+
 Contributions are welcome! Feel free to open an issue or submit a pull request.
 
-License
-This project is licensed under the MIT License.
+## License
+
+This project is licensed under the [MIT License](LICENSE).
