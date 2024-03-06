@@ -24,7 +24,7 @@
 
 ## Deployment
 
-This project is deployed using Render. You can access the live version [here](#).
+This project is deployed using Render. You can access the live version [here](https://amazon-clone-gefd.onrender.com/).
 
 ## Usage
 
