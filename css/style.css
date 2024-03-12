@@ -10,12 +10,14 @@
   box-sizing: border-box;
 }
 
-html{
+html {
   scroll-behavior: smooth;
+  overflow-x: clip;
 }
 
 body {
   font-family: "Amazon Ember", sans-serif;
+  overflow-x: clip;
 }
 
 .navbar {
@@ -147,6 +149,7 @@ span {
 .panel-ops p {
   display: inline;
   margin-left: 10px;
+  white-space: nowrap;
 }
 
 .panel-ops {
@@ -291,7 +294,7 @@ footer a:hover .div-panel {
   background-repeat: no-repeat; /* No repeat */
 }
 
-.foot-panel2{
+.foot-panel2 {
   background-color: #222f3d;
   color: white;
   height: 300px;
@@ -299,22 +302,22 @@ footer a:hover .div-panel {
   justify-content: space-evenly;
 }
 
-ul{
-  margin-top:10px;
+ul {
+  margin-top: 10px;
 }
 
-ul a{
+ul a {
   display: block;
   font-size: 0.85rem;
-  margin-top:10px;
+  margin-top: 10px;
   color: #dddddd;
 }
 
-ul a:hover{
+ul a:hover {
   text-decoration: underline;
 }
 
-.foot-panel3{
+.foot-panel3 {
   background-color: #222f3d;
   color: white;
   border: 0.5px solid white;
@@ -323,14 +326,13 @@ ul a:hover{
   align-items: center;
 }
 
-.logo{
+.logo {
   background-image: url("/images/amazon_logo.png");
   background-size: cover;
   height: 50px;
   width: 100px;
-
 }
-.foot-panel4{
+.foot-panel4 {
   background-color: #0f1111;
   color: white;
   height: 80px;
@@ -338,18 +340,128 @@ ul a:hover{
   text-align: center;
 }
 
-.pages{
+.pages {
   padding-top: 25px;
 }
-.copyright{
+.copyright {
   padding-top: 5px;
 }
-.fork-corner.fc-size-small.fc-pos-tl+div {
+.fork-corner.fc-size-small.fc-pos-tl + div {
   top: -75px;
   left: -75px;
   position: absolute;
 }
-.github a{
+.github a {
   color: white;
   text-decoration: none;
+}
+
+@media only screen and (max-width: 767px) {
+  .navbar {
+    white-space: nowrap;
+    overflow-x: auto;
+  }
+  .nav-search {
+    display: none;
+
+  }
+  .hero-message {
+/*     width: auto;
+    white-space: nowrap;
+    overflow-x: auto;
+    */
+    display: none;
+  }
+  .shop-section {
+    justify-content: center; /* Center align items on smaller screens */
+  }
+
+  .box {
+    width: 90%; /* Set width to 90% on smaller screens */
+  }
+  .search-select {
+    display: none;
+  }
+  .panel {
+    flex-wrap: nowrap; /* Prevent wrapping of child elements */
+    justify-content: flex-start; /* Ensure child elements start from the left */
+    overflow-x: auto;
+  }
+
+  .panel-ops {
+    display: flex;
+    width: 100%; 
+  }
+
+  .panel-ops p {
+    margin-left: 5px; /* Adjust margin for smaller screens */
+  }
+  .panel-deals{
+    white-space: nowrap;
+  }
+  .foot-panel2 {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    flex-direction: column; /* Stack items vertically on smaller screens */
+    align-items: center; /* Center items vertically */
+    overflow-x: auto;
+  }
+
+  ul {
+    flex:1;
+    max-width: none; /* Remove maximum width */
+    margin: 0 10px; /* Adjust margin */
+    text-align: center; /* Center text */
+  }
+
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .navbar {
+    white-space: nowrap;
+  }
+
+  .hero-message {
+    display: none;
+  }
+  .shop-section {
+    justify-content: center;
+  }
+  .box {
+    width: 90%;
+  }
+  .search-select {
+    display: none;
+  }
+  .panel {
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    overflow-x: auto;
+  }
+  .panel-ops {
+    display: flex;
+    width: 100%; 
+  }
+  .panel-ops p {
+    margin-left: 5px;
+  }
+  .panel-deals {
+    white-space: nowrap;
+  }
+  .foot-panel2 {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: auto;
+  }
+  ul {
+    flex: 1;
+    max-width: none;
+    margin: 0 10px;
+    text-align: center;
+  }
 }
